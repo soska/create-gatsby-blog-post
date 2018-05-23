@@ -36,7 +36,7 @@ export const createPost = async (folder, opts = {}) => {
   const folderName = [
     formatDate(date, options.dateFormat),
     options.folder
-  ].join('-');
+  ].join('/');
 
   const template = post({
     capitalized,
